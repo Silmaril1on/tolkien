@@ -1,0 +1,23 @@
+@each $key, $value in $colors {
+  .color-#{$key} {
+    color: $value;
+  }
+  .bg-#{$key} {
+    background-color: $value;
+  }
+
+  .hover-#{$key} {
+    transition: 0.3s;
+    &:hover {
+      color: $value;
+      background-color: $light-grey;
+    }
+  }
+  .hover-rop {
+    transition: 0.4s;
+    &:hover {
+      color: white;
+      background-color: $rop-grey;
+    }
+  }
+}

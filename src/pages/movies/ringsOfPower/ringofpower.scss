@@ -1,0 +1,185 @@
+@import "../../../styles/index.scss";
+
+.rop-container {
+  height: 400px;
+  @media screen and (min-width: 1000px) {
+    height: 740px;
+  }
+
+  .rop-races-btn {
+    font-size: 0.5rem;
+    padding: 3px 10px 3px 10px;
+    @media screen and (min-width: 700px) {
+      font-size: 1rem;
+      padding: 5px 20px 5px 20px;
+    }
+    @media screen and (min-width: 1000px) {
+      font-size: 1.2rem;
+      padding: 10px 30px 10px 30px;
+    }
+  }
+
+  .rop-race-background {
+    background: url(../../../assets/dwarves-background.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .rop-character-info {
+    h1 {
+      font-size: 1.1rem;
+      @media screen and (min-width: 1000px) {
+        font-size: 3rem;
+        font-weight: normal;
+      }
+    }
+    p {
+      font-size: 0.5rem;
+      @media screen and (min-width: 1000px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.background {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.795) 20%,
+      rgba(0, 0, 0, 0) 60%
+    ),
+    url("../../../assets/rop-wallpaper.webp");
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+
+  .rop-info {
+    font-size: 0.5rem;
+    .marks {
+      span {
+        margin: 2px;
+        background-color: rgba(220, 220, 220, 0.295);
+        border-radius: 5px;
+        width: auto;
+        padding: 2px 5px 2px 5px;
+        font: bold 0.6rem semplicitapro;
+        @media screen and (min-width: 1000px) {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    @media screen and (min-width: 1000px) {
+      font-size: 0.9rem;
+    }
+  }
+
+  .rop-icons {
+    max-width: 600px;
+    h1 {
+      transition: 0.3s;
+      width: 80px;
+      @media screen and (min-width: 1000px) {
+        font-size: 1rem;
+        padding: 3px 10px 3px 10px;
+        width: 100px;
+      }
+      &:hover {
+        transform: scale(1.05);
+        background-color: #e4e0e0;
+      }
+    }
+
+    span {
+      border-radius: 50%;
+      background-color: rgba(69, 88, 105, 0.541);
+      height: 35px;
+      margin: 3px;
+      @include flex-row;
+      justify-content: center;
+      position: relative;
+      width: 35px;
+      @media screen and (min-width: 1000px) {
+        height: 60px;
+        width: 60px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: #fff;
+        transform: scale(1.1);
+      }
+      &:hover svg {
+        color: $ropBlue;
+      }
+      svg {
+        font-size: 25px;
+        @media screen and (min-width: 1000px) {
+          height: 30px;
+          width: 30px;
+        }
+      }
+    }
+
+    span:nth-child(2),
+    span:nth-child(3),
+    span:nth-child(4),
+    span:nth-child(5),
+    span:nth-child(6),
+    span:nth-child(7) {
+      z-index: 2;
+      &:nth-child(2) {
+        &:before {
+          content: "trailer";
+        }
+      }
+      &:nth-child(3) {
+        &:before {
+          content: "watchlist";
+        }
+      }
+      &:nth-child(4) {
+        &:before {
+          content: "like";
+        }
+      }
+      &:nth-child(5) {
+        &:before {
+          content: "dislike";
+        }
+      }
+      &:nth-child(6) {
+        &:before {
+          content: "watch";
+        }
+      }
+      &:nth-child(7) {
+        &:before {
+          content: "share";
+        }
+      }
+      &:before {
+        border-radius: 5px;
+        background-color: white;
+        bottom: -25px;
+        color: black;
+        font: bold 0.6rem semplicitapro;
+        height: auto;
+        letter-spacing: 1px;
+        padding: 3px 10px 3px 10px;
+        position: absolute;
+        opacity: 0;
+        z-index: 2;
+        transition: 0.3s ease-in-out;
+        width: auto;
+        @media screen and (min-width: 1000px) {
+          bottom: -40px;
+          font-size: 1rem;
+        }
+      }
+      &:hover:before {
+        opacity: 1;
+      }
+    }
+  }
+}

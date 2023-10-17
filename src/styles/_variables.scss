@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Quicksand:wght@300;500&display=swap");
+
+$primary: semplicitapro;
+$secondary: quicksand;
+$kelt: kelt;
+$aniron: anironc;
+
+//colors
+$black: #000;
+$dark: #202020;
+$white: #fff;
+$ropBlue: #252e39;
+$light-white: #aaa;
+$rop-grey: rgba(137, 139, 141, 0.432);
+$light-grey: #ccc;
+$goldenrod: goldenrod;
+$gold: gold;
+$transparent: transparent;
+$blue: blue;
+$light-black: #404040;
+$primary-gradient-color: linear-gradient(white 30%, #7a7a7d);
+$elipse-black: radial-gradient(
+    ellipse at bottom,
+    #0b0b0b 0,
+    rgba(11, 11, 11, 0) 72%,
+    rgba(11, 11, 11, 0) 100%
+  ),
+  radial-gradient(
+    ellipse at bottom,
+    rgba(11, 11, 11, 0.5) 0,
+    rgba(11, 11, 11, 0) 70%,
+    rgba(11, 11, 11, 0) 100%
+  );
+
+$colors: (
+  "rop-blue": $ropBlue,
+  "rop-grey": $rop-grey,
+  "white": $white,
+  "black": $black,
+  "l-black": $light-black,
+  "l-grey": $light-grey,
+  "transparent": $transparent,
+  "goldenrod": $goldenrod,
+  "gold": $gold,
+  "dark": $dark,
+  "blue": $blue,
+  "elipse": $elipse-black,
+  "gradient": $primary-gradient-color,
+);
+
+//padding-margin
+$base-padding: 5px;
+$base-margin: 5px;
+
+//border-radius
+$base-border-radius: 20px;
+
+//font-size
+$smallest-font-size: 0.4rem;
+$small-font-size: 0.7rem;
+$base-font-size: 1.2rem;
+$large-font-size: 2rem;
+$xl-font-size: 3rem;
+$xxl-font-size: 4.5rem;

@@ -1,0 +1,43 @@
+@import "../../styles/index.scss";
+
+.navigation-bar {
+  background: url("../../assets/navbk1.png");
+  background-position: center;
+  background-size: 100% 105px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  filter: drop-shadow(0 16px 18px black) hue-rotate(345deg);
+
+  z-index: -1;
+  width: 100%;
+  @media screen and (min-width: 950px) {
+  }
+}
+
+.side-bar {
+  background: url("../../assets/sidebar-bk.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.menu-button {
+  div {
+    height: 5px;
+    width: 25px;
+    margin: 2px;
+    background: url("../../assets/golden-bk1.jpg");
+    background-position: center;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+.home-logo {
+  transition: 0.3s;
+  &:hover {
+    transform: translateX(10px) scale(1.1);
+    filter: brightness(1.2);
+  }
+}

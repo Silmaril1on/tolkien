@@ -1,0 +1,41 @@
+@import "../../styles/index.scss";
+
+.footer-span {
+  @include flex-row;
+  background-color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 25px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+  width: 25px;
+
+  &:before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.205);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -33px;
+    transition: 0.5s;
+    width: 20px;
+    transform: skew(30deg);
+  }
+
+  &:hover:before {
+    left: 50px;
+  }
+
+  svg {
+    height: 100%;
+    padding: 3px;
+    width: 100%;
+    color: white;
+
+    &:hover {
+      color: goldenrod;
+    }
+  }
+}
