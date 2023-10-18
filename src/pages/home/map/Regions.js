@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import RegionInfo from "./RegionInfo";
 
 function Regions() {
-  const [info, setInfo] = useState(false);
   const [regionInfo, setRegionInfo] = useState(null);
 
   const openRegionInfo = (id) => {

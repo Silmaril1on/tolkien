@@ -10,7 +10,7 @@ function CharactersSlider() {
   const arr = characters.slice(0, 1).map((item) => item.heroes);
   const heroesArray = arr[0];
 
-  const [people, setPeople] = useState(heroesArray);
+  const [people] = useState(heroesArray);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
