@@ -24,3 +24,27 @@
 html {
   scroll-behavior: smooth;
 }
+
+@font-face {
+  font-family: "semplicitapro";
+  src: local("semplicitapro"),
+    url("../src/fonts/SemplicitaPro.otf") format("opentype");
+}
+@font-face {
+  font-family: "semplicitaprobold";
+  src: local("semplicitapro"),
+    url("../src/fonts/SemplicitaPro-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "aniron";
+  src: local("aniron"), url("../src/fonts/Anironc-d9DK.ttf") format("truetype");
+}
+@font-face {
+  font-family: "aniron";
+  src: local("aniron"),
+    url("../src/fonts/AnironcBold-PKwr.ttf") format("truetype");
+}
+@font-face {
+  font-family: "kelt";
+  src: local("kelt"), url("../src/fonts/KELTN__.ttf") format("truetype");
+}

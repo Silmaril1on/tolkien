@@ -97,7 +97,6 @@ import halbrandBig from "../assets/halbrand-big.webp";
 import durinBig from "../assets/durin-big.webp";
 import adarBig from "../assets/adar-big.webp";
 import arondirBig from "../assets/arondir-big.webp";
-import sadocBig from "../assets/sudoc-big.webp";
 import isildurBig from "../assets/isildur-big.webp";
 import strangerBig from "../assets/stranger-big.webp";
 import elendilBig from "../assets/elendil-big.webp";
