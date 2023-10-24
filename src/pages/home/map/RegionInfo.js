@@ -2,7 +2,7 @@ import React from "react";
 import { headerZoom } from "../../../framerAnimations/motionValues";
 import { motion } from "framer-motion";
 
-function RegionInfo({ data }) {
+function RegionInfo({ data, closeRegion }) {
   console.log(data);
   return (
     <div className="region-info">
@@ -18,7 +18,7 @@ function RegionInfo({ data }) {
                 <h1 className="golden-text-style pt-3 pb-3  font-f-kelt ls-md text-t-cap font-s-xl">
                   {name}
                 </h1>
-                <p className="color-l-grey pt-1 pb-3 font-f-secondary font-s-md">
+                <p className="color-l-grey pt-1 pb-3 font-f-secondary responsive-p">
                   {info}
                 </p>
                 <motion.div
@@ -33,7 +33,10 @@ function RegionInfo({ data }) {
             </div>
           );
         })}
-        <button className="close-button pos-a top-30 right-50"></button>
+        <button
+          onClick={closeRegion}
+          className="close-button pos-a top-30 right-50"
+        ></button>
       </section>
     </div>
   );

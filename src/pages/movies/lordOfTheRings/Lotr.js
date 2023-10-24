@@ -10,12 +10,10 @@ function Lotr() {
   return (
     <main className="lotr-container display-f fd-c pos-r">
       <LotrHeader />
-      <section className="mt-4 column-c">
-        <LotrMovies />
-        <Cast />
-      </section>
+      <LotrMovies />
       <CharactersSlider />
       <MobileSlider />
+      <Cast />
     </main>
   );
 }

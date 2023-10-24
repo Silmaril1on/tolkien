@@ -1,6 +1,6 @@
 export const slideLeft = {
   hidden: {
-    x: -250,
+    x: -100,
   },
   visible: {
     x: 0,

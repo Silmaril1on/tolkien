@@ -1,8 +1,7 @@
 @import "../../../styles/index.scss";
 
 .lotr-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.253)),
-    url("../../../assets/delux-bk.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.253));
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,14 +9,110 @@
   height: 100%;
   margin-top: -10px;
 
-  .lotr-header {
-    background: url("../../../assets/blue-wp.webp");
-    background-position: center;
-    background-size: cover;
+  .cast-section {
+    @media screen and (min-width: 1000px) {
+      width: 1200px;
+    }
+    .cast-card {
+      filter: brightness(0.8);
+      transition: 0.4s;
+      &:hover {
+        cursor: pointer;
+        filter: brightness(1);
+      }
+    }
   }
 
-  section {
-    background: $elipse-black;
+  .dir {
+    h3 {
+      margin: 5px;
+
+      .gold {
+        color: $goldenrod;
+        font-weight: normal;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .genre * {
+    letter-spacing: 1px;
+    border: 1px solid #aaa;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+  }
+
+  .hobbit-header {
+    background: linear-gradient(to right, black 20%, rgba(0, 0, 0, 0.144)),
+      url("../../../assets/hobbitwp.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 680px;
+    @media screen and (min-width: 900px) {
+      padding-left: 4%;
+    }
+  }
+
+  .movie-icons {
+    span {
+      width: 35px;
+      height: 35px;
+      margin: 5px;
+      border-radius: 50%;
+      @include flex-row;
+      justify-content: center;
+      background-color: $ropBlue;
+      @media screen and (min-width: 600px) {
+        height: 45px;
+        width: 45px;
+      }
+      svg {
+        font-size: 25px;
+      }
+    }
+  }
+  .chapters {
+    @media screen and (min-width: 1000px) {
+      height: 720px;
+      margin: 3%;
+    }
+
+    .active-chapter {
+      height: auto;
+      margin: 10px;
+      width: 60px;
+      @media screen and (min-width: 1000px) {
+        width: 90px;
+      }
+    }
+
+    .inactive-chapter {
+      height: auto;
+      margin: 10px;
+      width: 50px;
+      @media screen and (min-width: 1000px) {
+        width: 80px;
+      }
+    }
+
+    .linear {
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.829),
+        rgba(0, 0, 0, 0.075) 70%
+      );
+    }
+  }
+
+  .lotr-header {
+    background: linear-gradient(to right, black 20%, rgba(0, 0, 0, 0.144)),
+      url("../../../assets/1258894.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 680px;
+    @media screen and (min-width: 900px) {
+      padding-left: 4%;
+    }
   }
 }
 

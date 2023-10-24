@@ -1,87 +1,56 @@
 import React, { useState } from "react";
 import moviesData from "../../../database/moviesData";
+import ChaptersList from "./ChaptersList";
+import { slideLeft } from "../../../framerAnimations/motionValues";
 import { motion } from "framer-motion";
 import SectionHeader from "../../../components/SectionHeader";
-import line from "../../../assets/line2.png";
 
 function LotrMovies() {
-  const arr = moviesData.slice(0, 1).map((item) => item.child);
-  const movies = arr[0];
-  const [positionIndexes, setPositionIndexes] = useState([0, 1, 2]);
+  const lotrData = moviesData.slice(0, 1).map((item) => item.chapters);
+  const array = lotrData.flat();
 
-  const handleNext = () => {
-    setPositionIndexes((prevIndexes) => {
-      const updateIndexes = prevIndexes.map(
-        (prevIndexes) => (prevIndexes + 1) % 3
-      );
-      return updateIndexes;
-    });
-  };
+  const [movie, setMovie] = useState(0);
+  const [active, setActive] = useState(0);
 
-  const handleBack = () => {
-    setPositionIndexes((prevIndexes) => {
-      const updatedIndexes = prevIndexes.map(
-        (prevIndexes) => (prevIndexes + 1) % 3
-      );
-      return updatedIndexes;
-    });
-  };
-
-  const positions = ["left", "center", "right"];
-
-  const imageVariants = {
-    left: {
-      x: "-70%",
-      scale: 0.7,
-      zIndex: 2,
-      transition: {
-        duration: 0.5,
-      },
-    },
-    center: {
-      x: "0%",
-      scale: 1,
-      zIndex: 4,
-      transition: {
-        duration: 0.5,
-      },
-    },
-    right: {
-      x: "70%",
-      scale: 0.7,
-      zIndex: 2,
-      transition: {
-        duration: 0.5,
-      },
-    },
+  const renderMovie = (index) => {
+    setMovie(index);
+    setActive(index);
   };
 
   return (
-    <div className="h-750 pos-r of-h mb-4 box-s-bb w-full pb-3 column-c">
-      <div className="mt-3">
+    <>
+      <div className="mt-4">
         <SectionHeader>movies</SectionHeader>
       </div>
-      <img className="w-full" src={line} alt="line" />
-      <div className="row-c pt-3 pb-3 pos-r h-full w-full">
-        {movies.map((movie, index) => {
-          return (
-            <motion.div
-              variants={imageVariants}
-              initial="center"
-              animate={positions[positionIndexes[index]]}
-              className="w-300 m-1 pos-a w-300"
-              key={movie.id}
-            >
-              <img className="w-full" src={movie.image} alt={movie.name} />
-            </motion.div>
-          );
-        })}
-      </div>
-      <div className="row-sa w-200 mb-1 p-2">
-        <button onClick={handleBack} className="left-button"></button>
-        <button onClick={handleNext} className="right-button"></button>
-      </div>
-    </div>
+      <section className="h-400 chapters w-auto pos-r display-f a-items-fe color-white">
+        <motion.div
+          variants={slideLeft}
+          initial="hidden"
+          whileInView="visible"
+          className="row-c m-1 pos-r z-2 mw-300"
+        >
+          {array.map((icon, index) => {
+            return (
+              <motion.div
+                variants={slideLeft}
+                onClick={() => renderMovie(index)}
+                className={
+                  active === index ? "active-chapter" : "inactive-chapter"
+                }
+                key={icon.id}
+              >
+                <img
+                  className="w-full cursor-p v-align-top h-full"
+                  src={icon.image}
+                  alt="posters"
+                />
+              </motion.div>
+            );
+          })}
+        </motion.div>
+        <ChaptersList data={array[movie].chapter} />
+      </section>
+    </>
   );
 }
 

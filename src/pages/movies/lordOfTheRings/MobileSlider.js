@@ -36,7 +36,7 @@ function MobileSlider() {
             className="pos-a h-400 w-300 primary-image-border column-c"
           >
             <img
-              className="w-auto of-auto h-9"
+              className="w-auto o-fit-auto h-9"
               src={heroesArray[index].image}
               alt="creed-hero"
             />

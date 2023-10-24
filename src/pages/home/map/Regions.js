@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import RegionInfo from "./RegionInfo";
 
 function Regions() {
-  const [regionInfo, setRegionInfo] = useState(null);
+  const [regionInfo, setRegionInfo] = useState(false);
 
   const openRegionInfo = (id) => {
     if (id === regionInfo) {
@@ -13,6 +13,10 @@ function Regions() {
       return;
     }
     setRegionInfo(id);
+  };
+
+  const closeRegion = () => {
+    setRegionInfo(true);
   };
 
   return (
@@ -36,7 +40,9 @@ function Regions() {
               alt="icon"
             />
             <img className="region" src={region.region} alt="region" />
-            {regionInfo === region.child && <RegionInfo data={region.child} />}
+            {regionInfo === region.child && (
+              <RegionInfo data={region.child} closeRegion={closeRegion} />
+            )}
           </motion.div>
         );
       })}

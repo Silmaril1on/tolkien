@@ -56,6 +56,18 @@ $breakpoints: (
   }
 }
 
+.responsive-h {
+  @include xs {
+    font-size: 1.2rem;
+  }
+  @include md {
+    font-size: 1.9rem;
+  }
+  @include xl {
+    font-size: 2.5rem;
+  }
+}
+
 .responsive-p {
   @include xs {
     font-size: 0.6rem;

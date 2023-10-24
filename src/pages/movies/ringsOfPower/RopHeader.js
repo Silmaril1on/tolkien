@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../../assets/rop-icon.png";
+import prime from "../../../assets/prime.png";
 import {
   AiOutlineLike,
   AiOutlinePlayCircle,
@@ -12,7 +13,10 @@ import { GiPartyPopper } from "react-icons/gi";
 
 function RopHeader() {
   return (
-    <header className="background font-f-primary text-t-cap display-f a-items-fs">
+    <header
+      id="top"
+      className="background of-h font-f-primary text-t-cap fd-c jc-c display-f a-items-fs"
+    >
       <div className="color-white w-full mw-1000 mt-5">
         <h4 className="m-2 text-t-up responsive-p ls-sm ws-md">
           amazon original
@@ -52,7 +56,7 @@ function RopHeader() {
             <span>tv-14</span>
           </div>
         </div>
-        <div className="rop-icons pt-2 pb-2 w-full display-f a-items-c jc-se">
+        <div className="rop-icons pt-2 pb-2 w-full display-f a-items-c jc-fs pl-2">
           <h1 className="cursor-p h-auto font-s-sm t-align-c b-xs bor-sm bg-white color-black">
             join prime watch now
           </h1>
@@ -74,6 +78,12 @@ function RopHeader() {
           <span>
             <AiOutlineShareAlt />
           </span>
+        </div>
+        <div className="h-auto mr-2 ml-2 mb-3 mt-3 w-full column-c">
+          <div className="w-full">
+            <img src={prime} alt="prime" />
+          </div>
+          <h1 className="font-s-md w-full">PRIMETIME EMMYS® 6X nominee</h1>
         </div>
       </div>
     </header>

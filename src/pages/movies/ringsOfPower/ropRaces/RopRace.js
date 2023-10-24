@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "../ringofpower.scss";
 import { motion } from "framer-motion";
-import { headerZoom } from "../../../../framerAnimations/motionValues";
-import { slideRight } from "../../../../framerAnimations/motionValues";
+import {
+  headerZoom,
+  slideRight,
+} from "../../../../framerAnimations/motionValues";
 
 function RopRace({ data }) {
   const [character, setCharacter] = useState(data[0].child);
@@ -29,7 +31,7 @@ function RopRace({ data }) {
               <motion.img
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
-                className=" pos-r cursor-p of-cover z-5 h-full w-full"
+                className=" pos-r cursor-p o-fit-cover z-5 h-full w-full"
                 src={item.elfIcon}
                 alt={item.name}
               />
@@ -60,7 +62,11 @@ function Hero({ data }) {
               animate="visible"
               className="w-full h-full"
             >
-              <img className="w-full of-cover h-full" src={item.image} alt="" />
+              <img
+                className="w-full o-fit-cover h-full"
+                src={item.image}
+                alt=""
+              />
             </motion.div>
           </div>
         );

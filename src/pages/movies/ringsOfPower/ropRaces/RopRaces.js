@@ -16,14 +16,17 @@ function RopRaces() {
   };
 
   return (
-    <div className="rop-container p-2 pos-r box-s-bb w-full bg-black">
-      <section className="color-white mt-4 h-auto w-full mw-900 row-se">
+    <div
+      id="characters"
+      className="rop-container p-2 pos-r box-s-bb w-full bg-black"
+    >
+      <section className="color-white mt-3 h-auto w-full mw-900 row-se">
         {races.map((item) => {
           return (
             <div key={item.id}>
               <h1
                 onClick={() => specificRace(item.child)}
-                className="rop-races-btn  hover-rop pos-r z-5 cursor-p font-f-secondary font-w-400 text-t-cap bg-rop-blue bor-lg"
+                className="rop-races-btn hover-rop pos-r z-5 cursor-p font-f-secondary font-w-400 text-t-cap bg-rop-blue bor-lg"
               >
                 {item.name}
               </h1>

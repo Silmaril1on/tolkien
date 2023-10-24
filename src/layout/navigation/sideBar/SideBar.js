@@ -19,7 +19,7 @@ function SideBar() {
       <motion.div
         whileHover={{ scale: 1.1 }}
         onClick={openBar}
-        className="menu-button column-c w-auto h-auto m-1 cursor-p"
+        className="menu-button column-c w-auto h-full m-1 cursor-p"
       >
         <div></div>
         <div></div>
@@ -37,7 +37,7 @@ function SideMenu() {
       variants={slideLeft}
       animate="visible"
       initial="hidden"
-      className="pos-f z-5 column-c of-h w-full h-auto bg-black top-0 l-0 side-bar"
+      className="pos-f z-20 column-c of-h w-full h-auto top-0 l-0 side-bar"
     >
       <div className="w-full display-f jc-c">
         <button
@@ -52,7 +52,7 @@ function SideMenu() {
           />
         </button>
       </div>
-      <div className=" column-c">
+      <div className="h-full column-c">
         {navlinksData.map((sideLink) => {
           return (
             <div className="m-2 of-h w-300 column-c" key={sideLink.id}>
@@ -73,6 +73,7 @@ function SideMenu() {
       <SideBarQuote />
       <SocialIcons />
       <h4 className="font-f-kelt font-s-md m-1">all right's reserved</h4>
+      <div className="w-full h-80"></div>
     </motion.aside>
   );
 }

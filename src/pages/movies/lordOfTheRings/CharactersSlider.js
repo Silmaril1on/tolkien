@@ -48,7 +48,11 @@ function CharactersSlider() {
       <div className="mt-2">
         <SectionHeader>characters</SectionHeader>
       </div>
-      <img className="desktop-size w-full of-cover m-5" src={line} alt="line" />
+      <img
+        className="desktop-size w-full o-fit-cover m-5"
+        src={line}
+        alt="line"
+      />
       <div className="slider-container">
         {people.map((heroes, personIndex) => {
           const { image, name, info, quote, id } = heroes;

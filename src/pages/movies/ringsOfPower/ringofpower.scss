@@ -6,6 +6,12 @@
     height: 740px;
   }
 
+  section {
+    @media screen and (min-width: 1000px) {
+      margin-top: 5%;
+    }
+  }
+
   .rop-races-btn {
     font-size: 0.5rem;
     padding: 3px 10px 3px 10px;
@@ -49,7 +55,7 @@
       rgba(0, 0, 0, 0) 60%
     ),
     url("../../../assets/rop-wallpaper.webp");
-  background-position: center;
+  background-position: center -10px;
   background-size: cover;
   height: auto;
   width: 100%;
@@ -76,7 +82,9 @@
 
   .rop-icons {
     max-width: 600px;
+    width: auto;
     h1 {
+      margin-right: 5px;
       transition: 0.3s;
       width: 80px;
       @media screen and (min-width: 1000px) {
@@ -95,6 +103,7 @@
       background-color: rgba(69, 88, 105, 0.541);
       height: 35px;
       margin: 3px;
+      margin: 0 5px 0 5px;
       @include flex-row;
       justify-content: center;
       position: relative;
@@ -173,13 +182,99 @@
         transition: 0.3s ease-in-out;
         width: auto;
         @media screen and (min-width: 1000px) {
-          bottom: -40px;
+          bottom: 0;
           font-size: 1rem;
         }
       }
       &:hover:before {
+        bottom: -40px;
         opacity: 1;
       }
     }
   }
+}
+
+.sticky {
+  position: sticky;
+  top: 10px;
+  width: auto;
+  z-index: 7;
+  .rop-links {
+    background-color: rgba(0, 0, 0, 0.692);
+    a.active {
+      color: white;
+      margin: 10px;
+      font-size: 0.8rem;
+      text-decoration: none;
+      position: relative;
+      @media screen and (min-width: 700px) {
+        font-size: 1.2rem;
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        background-color: white;
+        height: 3px;
+        left: 0;
+        bottom: -5px;
+      }
+    }
+    a {
+      color: #ccc;
+      font-size: 0.7rem;
+      margin: 10px;
+      padding: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+      @media screen and (min-width: 700px) {
+        font-size: 0.9rem;
+      }
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+.cast-container {
+  @media screen and (min-width: 1000px) {
+    height: 740px;
+    .cast-image {
+      width: auto;
+    }
+  }
+}
+
+.thumbImage {
+  width: 30px;
+  height: auto;
+  margin: 3px;
+  @media screen and (min-width: 1000px) {
+    width: 75px;
+  }
+}
+
+.fact-info {
+  background: linear-gradient(to right, #252e39e5, #252e3900 80%);
+}
+
+.fact-icons {
+  cursor: pointer;
+  position: relative;
+  height: 40px;
+  z-index: 2;
+  width: auto;
+  margin: 5px;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+  @media screen and (min-width: 800px) {
+    height: 80px;
+  }
+}
+
+.inactive {
+  border: 1px solid #ccc;
 }

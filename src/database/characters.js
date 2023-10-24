@@ -71,6 +71,7 @@ import sadocRop1 from "../assets/sudoc-small.jpg";
 import marigoldRop1 from "../assets/marigold-small.jpg";
 import largoRop1 from "../assets/largo-small.jpg";
 import poppyRop1 from "../assets/poppy-small.jpg";
+import adarRop1 from "../assets/adar-small.jpg";
 import noriRop1 from "../assets/nori-small.jpg";
 import halbrandRop1 from "../assets/halbrand-small.jpg";
 import theoRop1 from "../assets/theo-small.jpg";
@@ -86,6 +87,22 @@ import celebrimborRop1 from "../assets/celebrimbor-small.jpg";
 import arondirRop1 from "../assets/arondir-small.jpg";
 import elrondRop1 from "../assets/elrond-small.jpg";
 import galadrielRop1 from "../assets/galadriel-small.jpg";
+import strangerRop1 from "../assets/stranger-small.webp";
+import galadrielBig from "../assets/galadriel-big.webp";
+import elrondBig from "../assets/elrond-big.webp";
+import disaBig from "../assets/disa-big.webp";
+import mirielBig from "../assets/miriel-big.webp";
+import noriBig from "../assets/nori-big.webp";
+import halbrandBig from "../assets/halbrand-big.webp";
+import durinBig from "../assets/durin-big.webp";
+import adarBig from "../assets/adar-big.webp";
+import arondirBig from "../assets/arondir-big.webp";
+import sadocBig from "../assets/sudoc-big.webp";
+import isildurBig from "../assets/isildur-big.webp";
+import strangerBig from "../assets/stranger-big.webp";
+import elendilBig from "../assets/elendil-big.webp";
+import gilgaladBig from "../assets/gilgalad-big.webp";
+import celebrimborBig from "../assets/celebrimbor-big.webp";
 
 const characters = [
   {
@@ -434,6 +451,162 @@ const characters = [
   {
     id: 2,
     name: "rings of power",
+    cast: [
+      {
+        id: 0,
+        image: galadrielRop1,
+        child: [
+          {
+            id: 0,
+            image: galadrielBig,
+            name: "Morfydd Clark",
+          },
+        ],
+      },
+      {
+        id: 1,
+        image: elrondRop1,
+        child: [
+          {
+            id: 0,
+            image: elrondBig,
+            name: "robert aramayo",
+          },
+        ],
+      },
+      {
+        id: 2,
+        image: disaRop1,
+        child: [
+          {
+            id: 0,
+            image: disaBig,
+            name: "sophia novmete",
+          },
+        ],
+      },
+      {
+        id: 3,
+        image: mirielRop1,
+        child: [
+          {
+            id: 0,
+            image: mirielBig,
+            name: "cynthia addai-robinson",
+          },
+        ],
+      },
+      {
+        id: 4,
+        image: noriRop1,
+        child: [
+          {
+            id: 0,
+            image: noriBig,
+            name: "markella kavenagh",
+          },
+        ],
+      },
+      {
+        id: 5,
+        image: halbrandRop1,
+        child: [
+          {
+            id: 0,
+            image: halbrandBig,
+            name: "charlie vickers",
+          },
+        ],
+      },
+      {
+        id: 6,
+        image: durinRop1,
+        child: [
+          {
+            id: 0,
+            image: durinBig,
+            name: "owain arthur",
+          },
+        ],
+      },
+      {
+        id: 7,
+        image: adarRop1,
+        child: [
+          {
+            id: 0,
+            image: adarBig,
+            name: "joseph mawle",
+          },
+        ],
+      },
+      {
+        id: 8,
+        image: arondirRop1,
+        child: [
+          {
+            id: 0,
+            image: arondirBig,
+            name: "ismael cruz cordova",
+          },
+        ],
+      },
+      {
+        id: 11,
+        image: isildurRop1,
+        child: [
+          {
+            id: 0,
+            image: isildurBig,
+            name: "maxim baldry",
+          },
+        ],
+      },
+      {
+        id: 12,
+        image: strangerRop1,
+        child: [
+          {
+            id: 0,
+            image: strangerBig,
+            name: "daniel  weyman",
+          },
+        ],
+      },
+      {
+        id: 13,
+        image: elendilRop1,
+        child: [
+          {
+            id: 0,
+            image: elendilBig,
+            name: "lloyd owen",
+          },
+        ],
+      },
+      {
+        id: 14,
+        image: gilgaladRop1,
+        child: [
+          {
+            id: 0,
+            image: gilgaladBig,
+            name: "benjamin walker",
+          },
+        ],
+      },
+      {
+        id: 15,
+        image: celebrimborRop1,
+        child: [
+          {
+            id: 0,
+            image: celebrimborBig,
+            name: "charles edwards",
+          },
+        ],
+      },
+    ],
     races: [
       {
         id: 0,

@@ -17,20 +17,20 @@ function Navlinks() {
   };
 
   return (
-    <section className="desktop-size h-100 row-se w-full">
+    <section className="desktop-size h-100 row-sa w-full">
       <div
         onClick={goHome}
         className="home-logo h-90 cursor-p m-1 w-auto color-white"
       >
         <img className="w-full h-full" src={homeLogo} alt="home" />
       </div>
-      <div className="pos-r h-100 row-sa w-full">
+      <div className="pos-r h-100 row-c w-full">
         {navlinksData.map((link) => {
           return (
             <h1
               onMouseEnter={() => dropDownMenu(link.id)}
               onMouseLeave={() => setSubMenu(null)}
-              className="primary-text-style font-f-aniron font-s-md h-100 column-c"
+              className="primary-text-style m-4 font-f-aniron font-s-md h-100 column-c"
               key={link.id}
             >
               {link.name}

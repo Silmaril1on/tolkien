@@ -10,12 +10,10 @@ function Hobbit() {
   return (
     <main className="lotr-container display-f fd-c pos-r">
       <HobbitHeader />
-      <section className="mt-4 column-c">
-        <HobbitMovies />
-        <Cast />
-      </section>
+      <HobbitMovies />
       <CharactersSlider />
       <MobileSlider />
+      <Cast />
     </main>
   );
 }

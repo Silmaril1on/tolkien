@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 
 function SideBarQuote() {
   return (
-    <div className="w-full column-c">
-      <div className="w-300 h-auto">
+    <div className="w-full  column-c">
+      <div className="w-300 of-h h-auto">
         <motion.img
           variants={circleRotate}
           animate="visible"
