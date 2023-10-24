@@ -15,7 +15,7 @@ function MiddleEarth() {
         variants={slideLeft}
         initial="hidden"
         animate="visible"
-        className="pos-a left-0 text-t-cap font-f-kelt  w-auto"
+        className="brush pos-a z-2 left-0 top-60 text-t-cap font-f-kelt w-auto"
       >
         <motion.div variants={slideLeft} className="brush-bk mb-2">
           <h3 className="bw-text-style p-1">explore</h3>
@@ -39,9 +39,9 @@ function MiddleEarth() {
           alt="light"
         />
       </div>
-      <div className="map-content-container h-600 column-c pos-r w-auto">
+      <div className="map-content-container h-250 column-c pos-r w-auto">
         <img
-          className="w-full h-full pos-a h-600 w-auto"
+          className="w-full h-full pos-a w-auto"
           src={middleEarth}
           alt="map"
         />
