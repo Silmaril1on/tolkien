@@ -34,6 +34,8 @@ $utilities: (
   "border-bottom": (
     "prefix": "bb",
     "values": (
+      "l-green": 2px solid darkgreen,
+      "green": 4px solid darkgreen,
       "none": none,
       "xs": 1px solid #ccc,
       "sm": 2px solid white,
@@ -248,7 +250,10 @@ $utilities: (
   "margin-top": (
     "prefix": "mt",
     "values": (
+      "n1": $base-margin - 10,
       "n2": $base-margin - 20,
+      "n3": $base-margin - 30,
+
       "0": 0,
       "1": $base-margin,
       "2": $base-margin * 2,
@@ -445,6 +450,17 @@ $utilities: (
       "400": 400px,
     ),
   ),
+  "list-style-type": (
+    "prefix": "lst",
+    "values": (
+      "none": none,
+      "disc": disc,
+      "circle": circle,
+      "square": square,
+      "roman": lower-roman,
+      "latin": lower-latin,
+    ),
+  ),
   "line-height": (
     "prefix": "lh",
     "values": (
@@ -618,11 +634,15 @@ $utilities: (
     "prefix": "w",
     "values": (
       "full": 100%,
+      "15": 15%,
+      "2": 20%,
+      "3": 30%,
       "4": 40%,
       "50": 50%,
       "6": 60%,
       "7": 70%,
       "8": 80%,
+      "85": 85%,
       "9": 90%,
       "auto": auto,
       "10": 10px,

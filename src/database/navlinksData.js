@@ -59,14 +59,17 @@ const navigationLinks = [
       {
         id: 0,
         name: "John Ronald Reuel Tolkien",
+        link: "tolkien",
       },
       {
         id: 1,
         name: "Eru Ilúvatar",
+        link: "iluvatar",
       },
       {
         id: 2,
         name: "Peter jackson",
+        link: "peterjackson",
       },
     ],
   },

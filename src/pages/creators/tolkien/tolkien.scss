@@ -1,0 +1,73 @@
+.tolkien {
+  .side-links {
+    ul {
+      background-color: #202020;
+      .active-link {
+        color: white;
+        margin: 3px;
+        text-decoration: none;
+        &:hover {
+          color: rgb(6, 158, 6);
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+      .inactive-link {
+        color: rgb(6, 158, 6);
+        font-weight: bold;
+        font-size: 1rem;
+        text-decoration: none;
+        width: 150px;
+      }
+    }
+  }
+
+  b {
+    color: white;
+  }
+  .float-left,
+  .float-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: capitalize;
+    height: auto;
+    width: auto;
+    padding: 10px;
+
+    h6 {
+      color: white;
+      padding: 2px;
+      width: 200px;
+      text-align: center;
+    }
+  }
+  .float-right {
+    float: right;
+  }
+
+  .float-left {
+    float: left;
+  }
+
+  img {
+    height: 300px;
+    width: auto;
+  }
+
+  .img-150 {
+    height: 150px;
+    width: auto;
+  }
+
+  .img-200 {
+    height: 200px;
+    width: auto;
+  }
+
+  .img-300 {
+    height: 350px;
+    width: auto;
+  }
+}
