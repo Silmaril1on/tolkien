@@ -88,10 +88,7 @@ const navigationLinks = [
       {
         id: 2,
         name: "elves",
-      },
-      {
-        id: 3,
-        name: "elves",
+        link: "elves",
       },
       {
         id: 4,
@@ -99,7 +96,8 @@ const navigationLinks = [
       },
       {
         id: 5,
-        name: "maiars",
+        name: "valars",
+        link: "valars",
       },
       {
         id: 6,

@@ -11,23 +11,25 @@ function RegionInfo({ data, closeRegion }) {
           const { flag, id, info, name, image } = regInfo;
           return (
             <div key={id} className="h-full row-c color-white ">
-              <div className="h-full mr-5 w-auto">
-                <img className="h-full w-auto" src={flag} alt="" />
+              <div className="regions-info-flag">
+                <img src={flag} alt="flag" />
               </div>
-              <div className="h-full ml-4 w-700">
-                <h1 className="golden-text-style pt-3 pb-3  font-f-kelt ls-md text-t-cap font-s-xl">
-                  {name}
-                </h1>
-                <p className="color-l-grey pt-1 pb-3 font-f-secondary responsive-p">
-                  {info}
-                </p>
+              <div className="region-info-content">
+                <div className="column-c">
+                  <h1 className="golden-text-style pt-3 pb-3 font-f-kelt ls-md text-t-cap font-s-xl">
+                    {name}
+                  </h1>
+                  <p className="color-l-grey t-align-c pt-1 pr-1 pb-3 font-f-secondary responsive-p">
+                    {info}
+                  </p>
+                </div>
                 <motion.div
                   variants={headerZoom}
                   initial="hidden"
                   animate="visible"
-                  className="w-auto of-h column-c h-250"
+                  className="region-image"
                 >
-                  <img className="surati h-full pb-3" src={image} alt={name} />
+                  <img src={image} alt={name} />
                 </motion.div>
               </div>
             </div>
@@ -35,7 +37,7 @@ function RegionInfo({ data, closeRegion }) {
         })}
         <button
           onClick={closeRegion}
-          className="close-button pos-a top-30 right-50"
+          className="close-button pos-a top-30 left-20"
         ></button>
       </section>
     </div>

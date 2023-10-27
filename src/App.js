@@ -6,6 +6,9 @@ import Lotr from "./pages/movies/lordOfTheRings/Lotr";
 import Hobbit from "./pages/movies/hobbit/Hobbit";
 import RingsOfPower from "./pages/movies/ringsOfPower/RingsOfPower";
 import Tolkien from "./pages/creators/tolkien/Tolkien";
+import Jackson from "./pages/creators/jackson/Jackson";
+import Elves from "./pages/races/elves/Elves";
+import Valars from "./pages/races/valars/Valars";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
         <Route path="/hobbit" element={<Hobbit />} />
         <Route path="/ringsofpower" element={<RingsOfPower />} />
         <Route path="/tolkien" element={<Tolkien />} />
+        <Route path="/peterjackson" element={<Jackson />} />
+        <Route path="/elves" element={<Elves />} />
+        <Route path="/valars" element={<Valars />} />
       </Routes>
     </>
   );

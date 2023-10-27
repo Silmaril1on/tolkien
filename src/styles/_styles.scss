@@ -10,11 +10,11 @@
   &:before {
     content: "";
     position: absolute;
-    height: 2px;
+    height: 3px;
     width: 1%;
     left: 50%;
     background-color: #ccc;
-    bottom: 35px;
+    bottom: 30px;
     transition: 0.3s;
     opacity: 0;
   }
@@ -22,9 +22,6 @@
     opacity: 1;
     left: 0;
     width: 100%;
-  }
-  &:hover {
-    color: #ccc;
   }
 }
 
@@ -143,6 +140,7 @@
 .rop-btn {
   background-color: $ropBlue;
   border-radius: 40px;
+  border: none;
   cursor: pointer;
   font-size: 0.5rem;
   font-family: $primary;
@@ -160,5 +158,23 @@
   }
   &:hover {
     background-color: $rop-grey;
+  }
+}
+
+.masky {
+  mask-image: url("../assets/masky.png");
+  mask-size: 2500% 100%;
+  animation: masky 1.3s;
+  animation-timing-function: steps(24);
+  animation-fill-mode: forwards;
+  will-change: transform;
+}
+
+@keyframes masky {
+  0% {
+    mask-position: 0 0;
+  }
+  100% {
+    mask-position: 100% 0;
   }
 }

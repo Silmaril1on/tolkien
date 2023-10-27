@@ -4,48 +4,36 @@ import { slideRight } from "../../../framerAnimations/motionValues";
 
 const linksData = [
   {
-    name: "tolkien",
-    link: "#tolkien",
+    name: "elves",
+    link: "#elves",
   },
   {
-    name: "childhood",
-    link: "#childhood",
+    name: "creation and awakening",
+    link: "#creation",
   },
   {
-    name: "youth",
-    link: "#youth",
+    name: "Discovery & sundering",
+    link: "#discovery",
   },
   {
-    name: "leeds and oxford",
-    link: "#leeds",
+    name: "life in aman",
+    link: "#life",
   },
   {
-    name: "lord of the rings",
-    link: "#lotr",
-  },
-  {
-    name: "Later Life And Recognition",
-    link: "#later",
-  },
-  {
-    name: "writing",
-    link: "#writing",
-  },
-  {
-    name: "courtship and marriage",
-    link: "#marriage",
-  },
-  {
-    name: "First World War",
+    name: "war of jewels",
     link: "#war",
   },
   {
-    name: "retirement",
-    link: "#retirement",
+    name: "Later days and decline",
+    link: "#later",
+  },
+  {
+    name: "house of finwe",
+    link: "#tree",
   },
 ];
 
-function SideInfo() {
+function SideLinks() {
   const [active, setActive] = useState(0);
 
   const activeLink = (index) => {
@@ -77,4 +65,4 @@ function SideInfo() {
   );
 }
 
-export default SideInfo;
+export default SideLinks;

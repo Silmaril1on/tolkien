@@ -30,7 +30,7 @@ function Navlinks() {
             <h1
               onMouseEnter={() => dropDownMenu(link.id)}
               onMouseLeave={() => setSubMenu(null)}
-              className="primary-text-style m-4 font-f-aniron font-s-md h-100 column-c"
+              className="primary-text-style m-4 font-f-kelt font-s-lg h-100 column-c"
               key={link.id}
             >
               {link.name}

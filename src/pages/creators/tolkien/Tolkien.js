@@ -1,5 +1,5 @@
 import React from "react";
-import "./tolkien.scss";
+import "../../tolkien.scss";
 import HeadlineHeader from "../../../components/HeadlineHeader";
 import SideInfo from "./SideInfo";
 import tolkien from "../../../assets/tolkien.jpg";
@@ -10,6 +10,9 @@ import tolkien3 from "../../../assets/tolkien3.jpg";
 import tolkien4 from "../../../assets/tolkien4.jpg";
 import tolkien5 from "../../../assets/tolkien5.jpg";
 import tolkien6 from "../../../assets/tolkien6.jpg";
+import tolkien7 from "../../../assets/tolkien7.jpg";
+import tolkien8 from "../../../assets/tolkien8.jpg";
+import tolkien10 from "../../../assets/tolkien10.jpg";
 
 function Tolkien() {
   return (
@@ -19,7 +22,7 @@ function Tolkien() {
         className="column-c bg-black color-l-grey w-full p-1 m-2"
       >
         <HeadlineHeader>john ronald reuel Tolkien</HeadlineHeader>
-        <p className="responsive-p mt-3">
+        <p className="responsive-p">
           <div className="float-right">
             <img src={tolkien} alt="tolkien" />
             <h6>born 3 January, 1892</h6>
@@ -47,7 +50,7 @@ function Tolkien() {
           rendering of stories originally told to his children but not directly
           related to the legendarium.
         </p>
-        <p id="childhood" className="responsive-p mt-3">
+        <p id="childhood" className="responsive-p">
           <ContentHeader>childhood</ContentHeader>
           Tolkien was born on January 3, 1892, in Bloemfontein in the Orange
           Free State (now the Free State province of South Africa) to Arthur
@@ -106,7 +109,7 @@ function Tolkien() {
           a large and world-renowned collection of works and had put it on free
           public display from around 1908.
         </p>
-        <p id="youth" className="responsive-p mt-3">
+        <p id="youth" className="responsive-p">
           <ContentHeader>youth</ContentHeader>
           Tolkien met and fell in love with Edith Mary Bratt, three years his
           senior, at the age of sixteen. Father Francis forbade him from
@@ -183,7 +186,7 @@ function Tolkien() {
           meeting of <b>Beren</b> and <b>Lúthien</b>, and Tolkien often referred
           to Edith as his Lúthien.
         </p>
-        <p id="leeds" className="responsive-p mt-3">
+        <p id="leeds" className="responsive-p">
           <ContentHeader>Leeds and Oxford</ContentHeader>
           Tolkien's first civilian job after World War I was at the
           <b> Oxford English Dictionary</b> (among others, he initiated the
@@ -211,7 +214,7 @@ function Tolkien() {
           published (1937) Tolkien suffered from an ailment and had to use
           crutches, the only time he was free from examining work.
         </p>
-        <p id="lotr" className="responsive-p mt-3">
+        <p id="lotr" className="responsive-p">
           <ContentHeader>lord of the rings</ContentHeader>
           The success of The Hobbit and a request for its sequel, was an
           oportunity to combine his personal desire for writing, and financial
@@ -272,7 +275,7 @@ function Tolkien() {
           Tolkien expressed "fear they have left their allegiance to our Mother
           ".
           <div className="float-left">
-            <img className="img-200" src={tolkien5} alt="tolkien" />
+            <img className="img-150" src={tolkien5} alt="tolkien" />
             <h6>
               The last known photograph of Tolkien, taken 9 August 1973, next to
               one of his favourite trees (a Pinus nigra) in the Botanic Garden,
@@ -303,7 +306,7 @@ function Tolkien() {
           such as the forced industrialization of <b>The Shire</b> in The Lord
           of the Rings. <br />
           <div className="float-right">
-            <img src={tolkien4} alt="tolkien" />
+            <img className="img-150" src={tolkien4} alt="tolkien" />
             <h6>The grave of J.R.R. and Edith Tolkien</h6>
           </div>
           <br /> <b>W.H. Auden</b> was a frequent correspondent and long-time
@@ -437,7 +440,243 @@ function Tolkien() {
           The Lord of the Rings (Der Herr der Ringe) to be their favourite work
           of literature.
         </p>
+        <p id="marriage" className="responsive-p mt-3">
+          <ContentHeader>courtship and marriage</ContentHeader>
+          At the age of 16, Tolkien met <b>Edith Mary Bratt</b>, who was three
+          years his senior, when he and his brother Hilary moved into the
+          boarding house where she lived in Duchess Road, <b>Edgbaston</b>.
+          According to Humphrey Carpenter, "Edith and Ronald took to frequenting
+          Birmingham teashops, especially one which had a balcony overlooking
+          the pavement. There they would sit and throw sugarlumps into the hats
+          of passers-by, moving to the next table when the sugar bowl was empty.
+          ... With two people of their personalities and in their position,
+          romance was bound to flourish. Both were orphans in need of affection,
+          and they found that they could give it to each other. During the
+          summer of 1909, they decided that they were in love." His guardian,
+          Father Morgan, considered it "altogether unfortunate" that his
+          surrogate son was romantically involved with an older,{" "}
+          <b>Protestant</b>
+          woman; Tolkien wrote that the combined tensions contributed to his
+          having "muffed exams". Morgan prohibited him from meeting, talking to,
+          or even corresponding with Edith until he was 21. Tolkien obeyed this
+          prohibition to the letter, with one notable early exception, over
+          which Father Morgan threatened to cut short his university career if
+          he did not stop. On the evening of his 21st birthday, Tolkien wrote to
+          Edith, who was living with family friend C. H. Jessop at
+          <b> Cheltenham</b>. <br />
+          <br /> He declared that he had never ceased to love her, and asked her
+          to marry him. Edith replied that she had already accepted the proposal
+          of George Field, the brother of one of her closest school friends. But
+          Edith said she had agreed to marry Field only because she felt "on the
+          shelf" and had begun to doubt that Tolkien still cared for her. She
+          explained that, because of Tolkien's letter, everything had changed.
+          On <b>8 January 1913</b>, Tolkien travelled by train to Cheltenham and
+          was met on the platform by Edith. The two took a walk into the
+          countryside, sat under a railway viaduct, and talked. By the end of
+          the day, Edith had agreed to accept Tolkien's proposal. She wrote to
+          Field and returned her engagement ring. Field was{" "}
+          <b>"dreadfully upset at first"</b>, and the Field family was "insulted
+          and angry". Upon learning of Edith's new plans, Jessop wrote to her
+          guardian, "I have nothing to say against Tolkien, he is a cultured
+          gentleman, but his prospects are poor in the extreme, and when he will
+          be in a position to marry I cannot imagine. Had he adopted a
+          profession it would have been different." Following their engagement,
+          Edith reluctantly announced that she was converting to Catholicism at
+          Tolkien's insistence. Jessop, "like many others of his age and class
+          ... strongly anti-Catholic", was infuriated, and he ordered Edith to
+          find other lodgings. Edith Bratt and Ronald Tolkien were formally
+          engaged at Birmingham in January 1913, and married at{" "}
+          <b>St Mary Immaculate Catholic Church</b> at Warwick, on 22 March
+          1916. In his 1941 letter to Michael, Tolkien expressed admiration for
+          his wife's willingness to marry a man with no job, little money, and
+          no prospects except the likelihood of being killed in the Great War.
+        </p>
+        <p id="war" className="responsive-p mt-3">
+          <ContentHeader>first world war</ContentHeader>
+          In August 1914, Britain entered the <b>First World War</b>. Tolkien's
+          relatives were shocked when he elected not to volunteer immediately
+          for the <b>British Army</b>. In a 1941 letter to his son Michael,
+          Tolkien recalled: "In those days chaps joined up, or were scorned
+          publicly. It was a nasty cleft to be in for a young man with too much
+          imagination and little physical courage." Instead, Tolkien, "endured
+          the obloquy", and entered a programme by which he delayed enlistment
+          until completing his degree. By the time he passed his finals in July
+          1915, Tolkien recalled that the hints were "becoming outspoken from
+          relatives". He was commissioned as a temporary second lieutenant in
+          the <b>Lancashire Fusiliers</b> on 15 July 1915. He trained with the
+          13th (Reserve) Battalion on <b>Cannock Chase</b>, Rugeley Camp near to
+          Rugeley, Staffordshire, for 11 months. In a letter to Edith, Tolkien
+          complained: "Gentlemen are rare among the superiors, and even human
+          beings rare indeed." Following their wedding, Lieutenant and Mrs.
+          Tolkien took up lodgings near the training camp. On 2 June 1916,
+          Tolkien received a telegram summoning him to <b>Folkestone</b> for
+          posting to France. The Tolkiens spent the night before his departure
+          in a room at the Plough & Harrow Hotel in <b>Edgbaston</b>,
+          Birmingham. He later wrote: "Junior officers were being killed off, a
+          dozen a minute. Parting from my wife then... it was like a death."
+          <h4 className="m-3 color-white">France</h4>
+          On 5 June 1916, Tolkien boarded a troop transport for an overnight
+          voyage to <b>Calais</b>. Like other soldiers arriving for the first
+          time, he was sent to the <b>British Expeditionary Force's</b> base
+          depot at Étaples. On 7 June, he was informed that he had been assigned
+          as a signals officer to the 11th (Service) Battalion, Lancashire
+          Fusiliers. The battalion was part of the <b>74th Brigade</b>, 25th
+          Division. While waiting to be summoned to his unit, Tolkien sank into
+          boredom. To pass the time, he composed a poem titled The Lonely Isle,
+          which was inspired by his feelings during the sea crossing to Calais.
+          To evade the British Army's postal censorship, he developed a code of
+          dots by which Edith could track his movements. He left Étaples on 27
+          June 1916 and joined his battalion at <b>Rubempré</b>, near Amiens.He
+          found himself commanding enlisted men who were drawn mainly from the
+          mining, milling, and weaving towns of Lancashire. According to{" "}
+          <b>John Garth</b>, he "felt an affinity for these working class men",
+          but military protocol prohibited friendships with "other ranks".
+          Instead, he was required to "take charge of them, discipline them,
+          train them, and probably censor their letters ... If possible, he was
+          supposed to inspire their love and loyalty." Tolkien later lamented,
+          "The most improper job of any man ... is bossing other men. Not one in
+          a million is fit for it, and least of all those who seek the
+          opportunity."
+          <h4 className="m-3 color-white">Battle of the Somme</h4>
+          Tolkien arrived at the <b>Somme</b> in early July 1916. In between
+          terms behind the lines at <b>Bouzincourt</b>, he participated in the
+          assaults on the <b>Schwaben Redoubt</b> and the <b>Leipzig salient</b>
+          . Tolkien's time in combat was a terrible stress for Edith, who feared
+          that every knock on the door might carry news of her husband's death.
+          Edith could track her husband's movements on a map of the{" "}
+          <b>Western Front</b>. The Reverend Mervyn S. Evers, Anglican chaplain
+          to the Lancashire Fusiliers, recorded that Tolkien and his fellow
+          officers were eaten by "hordes of lice" which found the Medical
+          Officer's ointment merely "a kind of hors d'oeuvre and the little
+          beggars went at their feast with renewed vigour." On 27 October 1916,
+          as his battalion attacked Regina Trench, Tolkien contracted trench
+          fever, a disease carried by lice. He was invalided to England on 8
+          November 1916. <br />
+          <div className="float-right">
+            <img className="img-200" src={tolkien7} alt="tolkien" />
+            <h6>
+              The Schwaben Redoubt, painting by William Orpen. Imperial War
+              Museum, London
+            </h6>
+          </div>
+          According to his children <b>John</b> and <b>Priscilla Tolkien</b>,
+          "In later years, he would occasionally talk of being at the front: of
+          the horrors of the first German gas attack, of the utter exhaustion
+          and ominous quiet after a bombardment, of the whining scream of the
+          shells, and the endless marching, always on foot, through a devastated
+          landscape, sometimes carrying the men's equipment as well as his own
+          to encourage them to keep going. ... <br /> Some remarkable relics
+          survive from that time: a trench map he drew himself; pencil-written
+          orders to carry bombs to the 'fighting line.'" Many of his dearest
+          school friends were killed in the war. Among their number were Rob
+          Gilson of the Tea Club and Barrovian Society, who was killed on the
+          first day of the Somme while leading his men in the assault on{" "}
+          <b>Beaumont Hamel</b>. Fellow T.C.B.S. member Geoffrey Smith was
+          killed during the battle, when a German artillery shell landed on a
+          first-aid post. Tolkien's battalion was almost completely wiped out
+          following his return to England. Men of the 1st Battalion, Lancashire
+          Fusiliers in a communication trench near Beaumont Hamel, 1916. Photo
+          by Ernest Brooks According to John Garth, <b>Kitchener's Army</b>, in
+          which Tolkien served, at once marked existing social boundaries and
+          counteracted the class system by throwing everyone into a desperate
+          situation together. Tolkien was grateful, writing that it had taught
+          him "a deep sympathy and feeling for the Tommy; especially the plain
+          soldier from the agricultural counties".
+          <h4 className="m-3 color-white">Home Front</h4>A weak and emaciated
+          Tolkien spent the remainder of the war alternating between hospitals
+          and garrison duties, being deemed medically unfit for general service.
+          During his recovery in a cottage in <b>Little Haywood</b>,
+          Staffordshire, he began to work on what he called{" "}
+          <b>The Book of Lost Tales</b>, beginning with{" "}
+          <b>The Fall of Gondolin</b>. Lost Tales represented Tolkien's attempt
+          to create a mythology for England, a project he would abandon without
+          ever completing. Throughout 1917 and 1918 his illness kept recurring,
+          but he had recovered enough to do home service at various camps. It
+          was at this time that Edith bore their first child, John Francis Reuel
+          Tolkien. In a 1941 letter, Tolkien described his son John as
+          "(conceived and carried during the starvation-year of 1917 and the
+          great U-boat campaign) round about the <b>Battle of Cambrai</b>, when
+          the end of the war seemed as far off as it does now".
+          <div className="float-left">
+            <img className="img-150" src={tolkien8} alt="tolkien" />
+            <h6>
+              Men of the 1st Battalion, Lancashire Fusiliers in a communication
+              trench near Beaumont Hamel, 1916. Photo by Ernest Brooks
+            </h6>
+          </div>
+          Tolkien was promoted to the temporary rank of lieutenant on 6 January
+          1918. When he was stationed at Kingston upon Hull, he and Edith went
+          walking in the woods at nearby Roos, and Edith began to dance for him
+          in a clearing among the flowering hemlock. After his wife's death in
+          1971, Tolkien remembered, <br />
+          <br />
+          <q>
+            <i className="color-white">
+              I never called Edith Luthien—but she was the source of the story
+              that in time became the chief part of the Silmarillion. It was
+              first conceived in a small woodland glade filled with hemlocks at
+              Roos in Yorkshire (where I was for a brief time in command of an
+              outpost of the Humber Garrison in 1917, and she was able to live
+              with me for a while). In those days her hair was raven, her skin
+              clear, her eyes brighter than you have seen them, and she could
+              sing—and dance. But the story has gone crooked, & I am left, and I
+              cannot plead before the inexorable Mandos.
+            </i>
+          </q>
+        </p>
+        <p id="retirement" className="responsive-p mt-3">
+          <ContentHeader>retirement</ContentHeader>
+          During his life in retirement, from 1959 up to his death in 1973,
+          Tolkien received steadily increasing public attention and literary
+          fame. In 1961, his friend <b>C. S. Lewis</b> even nominated him for
+          the <b>Nobel Prize in Literature.</b> The sales of his books were so
+          profitable that he regretted that he had not chosen early retirement.
+          In a 1972 letter, he deplored having become a cult-figure, but
+          admitted that "even the nose of a very modest idol ... cannot remain
+          entirely untickled by the sweet smell of incense!" Fan attention
+          became so intense that Tolkien had to take his phone number out of the
+          public directory, and eventually he and Edith moved to{" "}
+          <b>Bournemouth</b>, which was then a seaside resort patronized by the
+          British upper middle class. Tolkien's status as a best-selling author
+          gave them easy entry into polite society, but Tolkien deeply missed
+          the company of his fellow Inklings. Edith, however, was overjoyed to
+          step into the role of a society hostess, which had been the reason
+          that Tolkien selected Bournemouth in the first place. <br />
+          <div className="float-right">
+            <img src={tolkien10} alt="tolkien" />
+            <h6>Bust of Tolkien in the chapel of Exeter College, Oxford</h6>
+          </div>
+          The genuine and deep affection between Ronald and Edith was
+          demonstrated by their care about the other's health, in details like
+          wrapping presents, in the generous way he gave up his life at Oxford
+          so she could retire to Bournemouth, and in her pride in his becoming a
+          famous author. They were tied together, too, by love for their
+          children and grandchildren. In his retirement Tolkien was a consultant
+          and translator for <b>The Jerusalem Bible</b>, published in 1966. He
+          was initially assigned a larger portion to translate, but, due to
+          other commitments, only managed to offer some criticisms of other
+          contributors and a translation of the <b>Book of Jonah.</b> <br />
+          <br />
+          Edith died on 29 November 1971, at the age of 82. Ronald returned to
+          Oxford, where <b>Merton College</b> gave him convenient rooms near the
+          High Street. He missed Edith, but enjoyed being back in the city.{" "}
+          <br />
+          Tolkien was made a Commander of the <b>
+            Order of the British Empire
+          </b>{" "}
+          in the 1972 New Year Honours and received the insignia of the Order at
+          <b>Buckingham Palace</b> on 28 March 1972. In the same year Oxford
+          University gave him an honorary Doctorate of Letters. He had the name
+          <b> Luthien</b> engraved on Edith's tombstone at{" "}
+          <b>Wolvercote Cemetery, Oxford.</b>
+          When Tolkien died 21 months later on 2 September 1973 from a bleeding
+          ulcer and chest infection, at the age of 81, he was buried in the same
+          grave, with <b>"Beren"</b> added to his name. Tolkien's will was
+          proven on 20 December 1973, with his estate valued at £190,577
+          (equivalent to £2,452,000 in 2021).
+        </p>
       </article>
+
       <SideInfo />
     </div>
   );

@@ -42,8 +42,40 @@
             width: 100%;
             background-color: black;
 
-            .surati {
-              transform: scale(1.2);
+            .regions-info-flag {
+              width: 40%;
+              @media screen and (min-width: 1000px) {
+                height: 100%;
+                width: 300px;
+              }
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            .region-info-content {
+              width: 60%;
+              @media screen and (min-width: 1000px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+              }
+
+              .region-image {
+                width: 100%;
+                @media screen and (min-width: 1000px) {
+                  height: auto;
+                  width: 450px;
+                }
+
+                img {
+                  height: 100%;
+                  width: 100%;
+                }
+              }
             }
           }
         }
