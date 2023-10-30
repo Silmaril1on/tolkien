@@ -35,9 +35,14 @@
 
 .bw-text-style {
   color: $transparent;
+  cursor: pointer;
   background: $primary-gradient-color;
   background-clip: text;
+  transition: 0.4s;
   -webkit-background-clip: text;
+  &:hover {
+    color: white;
+  }
 }
 
 .right-button {

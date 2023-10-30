@@ -81,18 +81,11 @@ const navigationLinks = [
         id: 0,
         name: "dwarves",
       },
-      {
-        id: 1,
-        name: "humans",
-      },
+
       {
         id: 2,
         name: "elves",
         link: "elves",
-      },
-      {
-        id: 4,
-        name: "hobbits",
       },
       {
         id: 5,
@@ -102,10 +95,12 @@ const navigationLinks = [
       {
         id: 6,
         name: "istari",
+        link: "istari",
       },
       {
         id: 7,
-        name: "mythical creatures",
+        name: "creatures",
+        link: "creatures",
       },
     ],
   },

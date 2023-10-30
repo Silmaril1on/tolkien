@@ -38,7 +38,7 @@ function RopFactChild({ data }) {
 
   return (
     <section className="w-full h-full display-f a-items-fe pos-a top-0">
-      <div className="w-full b-xs display-f m-3 fd-r jc-fs">
+      <div className="w-full display-f m-3 fd-r jc-fs">
         {data.map((item, index) => {
           return (
             <div

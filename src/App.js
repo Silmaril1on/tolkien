@@ -9,6 +9,7 @@ import Tolkien from "./pages/creators/tolkien/Tolkien";
 import Jackson from "./pages/creators/jackson/Jackson";
 import Elves from "./pages/races/elves/Elves";
 import Valars from "./pages/races/valars/Valars";
+import Creatures from "./pages/races/creatures/Creatures";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/peterjackson" element={<Jackson />} />
         <Route path="/elves" element={<Elves />} />
         <Route path="/valars" element={<Valars />} />
+        <Route path="/creatures" element={<Creatures />} />
       </Routes>
     </>
   );
