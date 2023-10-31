@@ -115,12 +115,31 @@
 
 .primary-image-border {
   background: url("../assets/rock-wallpaper.webp");
+  border-radius: 10px;
   background-position: center;
   background-size: cover;
   border-image-source: url("../assets/border-image.png");
   border-image-slice: 40 40 40 40;
   border-image-width: 40px 40px 40px 40px;
   border-image-outset: 5px 5px 5px 5px;
+}
+
+.rise-border {
+  position: relative;
+  border-radius: 20px;
+  &:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-image-source: url("../assets/border-image.png");
+    border-image-slice: 40 40 40 40;
+    border-image-width: 40px 40px 40px 40px;
+    border-image-outset: 5px 5px 5px 5px;
+    z-index: 5;
+  }
 }
 
 .brush-bk {

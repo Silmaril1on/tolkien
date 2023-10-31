@@ -10,7 +10,7 @@ import Regions from "./Regions";
 
 function MiddleEarth() {
   return (
-    <section className="middle-earth of-h w-full pos-r row-c box-s-bb">
+    <section id="map" className="middle-earth of-h w-full pos-r row-c box-s-bb">
       <motion.div
         variants={slideLeft}
         initial="hidden"

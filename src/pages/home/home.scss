@@ -1,6 +1,65 @@
 @import "../../styles/index.scss";
 
 .home-page-container {
+  .news {
+    background: url("../../assets/morgul.jpg");
+    background-position: center;
+    background-size: cover;
+
+    .news-feed {
+      div {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 5px;
+        height: auto;
+        width: 250px;
+        &:hover span,
+        &:hover h1 {
+          color: goldenrod;
+        }
+
+        span {
+          padding-left: 3px;
+          text-transform: capitalize;
+          font-size: 0.7rem;
+          transition: 0.4s;
+          margin: 10px 3px 10px 3px;
+        }
+
+        h1 {
+          padding: 3px;
+          font-size: 1rem;
+          transition: 0.4s;
+        }
+
+        p {
+          font-size: 0.7rem;
+          padding: 10px 5px 10px 5px;
+          height: 100%;
+        }
+      }
+    }
+
+    .slider-container {
+      @media screen and (min-width: 1000px) {
+        align-items: flex-start;
+        display: flex;
+        margin: 10px;
+        padding: 10px;
+        width: 60%;
+      }
+    }
+
+    .news-slider {
+      @media screen and (min-width: 1000px) {
+        height: 300px;
+        width: 500px;
+      }
+    }
+  }
+
   .middle-earth {
     background: url("../../assets/map-bk.jpg");
     background-position: center;

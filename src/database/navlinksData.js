@@ -63,11 +63,6 @@ const navigationLinks = [
       },
       {
         id: 1,
-        name: "Eru Ilúvatar",
-        link: "iluvatar",
-      },
-      {
-        id: 2,
         name: "Peter jackson",
         link: "peterjackson",
       },
@@ -79,26 +74,16 @@ const navigationLinks = [
     child: [
       {
         id: 0,
-        name: "dwarves",
-      },
-
-      {
-        id: 2,
         name: "elves",
         link: "elves",
       },
       {
-        id: 5,
+        id: 1,
         name: "valars",
         link: "valars",
       },
       {
-        id: 6,
-        name: "istari",
-        link: "istari",
-      },
-      {
-        id: 7,
+        id: 2,
         name: "creatures",
         link: "creatures",
       },
