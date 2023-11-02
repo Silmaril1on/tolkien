@@ -7,7 +7,7 @@ import steam from "../../../assets/steam.png";
 
 function Video() {
   return (
-    <div className="w-auto mordor-video h-full">
+    <div className="w-auto mordor-video m-2 h-full">
       <div className="w-full rise-border h-full">
         <video
           className="w-full of-cover v-align-top h-full"

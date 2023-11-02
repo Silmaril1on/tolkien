@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import NewsSliderData from "../../../database/newsSlideShow";
 import { AnimatePresence, motion } from "framer-motion";
 import { slideShow } from "../../../framerAnimations/motionValues";
 import newsSliderData from "../../../database/newsSlideShow";
@@ -28,20 +27,20 @@ function NewsSlider() {
                 initial="hidden"
                 animate="visible"
                 className="pos-a w-full h-full"
-                key={NewsSliderData[index].image}
+                key={newsSliderData[index].image}
                 exit="exit"
                 custom={direction}
               >
                 <img
                   className="w-full h-full"
-                  src={NewsSliderData[index].image}
+                  src={newsSliderData[index].image}
                   alt="news"
                 />
                 <a
                   className="pos-a bottom-20 left-20 z-5 td-none font-s-md font-f-kelt font-w-600 text-t-cap bw-text-style"
-                  href={NewsSliderData[index].link}
+                  href={newsSliderData[index].link}
                 >
-                  {NewsSliderData[index].name}
+                  {newsSliderData[index].name}
                 </a>
               </motion.div>
             </AnimatePresence>
