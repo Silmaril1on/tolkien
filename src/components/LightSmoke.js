@@ -5,7 +5,7 @@ import { lightsVariant } from "../framerAnimations/motionValues";
 
 function LightSmoke() {
   return (
-    <div className="w-full h-full top-0 left-0 pos-a z-n2">
+    <div className="w-full h-full top-0 left-0 pos-a z-0">
       <motion.img
         variants={lightsVariant}
         animate="visible"

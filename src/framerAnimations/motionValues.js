@@ -33,7 +33,7 @@ export const opacityIn = {
     opacity: 1,
     transition: {
       duration: 0.5,
-      staggerChildren: 0.2,
+      staggerChildren: 0.3,
     },
   },
 };
@@ -118,5 +118,17 @@ export const slideShow = {
         type: "ease",
       },
     };
+  },
+};
+
+export const forMask = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 2,
+    },
   },
 };

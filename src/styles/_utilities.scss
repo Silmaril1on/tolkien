@@ -36,6 +36,7 @@ $utilities: (
     "values": (
       "l-green": 2px solid darkgreen,
       "green": 4px solid darkgreen,
+      "l-grey": 1px solid #ccc,
       "none": none,
       "xs": 1px solid #ccc,
       "sm": 2px solid white,
@@ -167,6 +168,14 @@ $utilities: (
     "value": (
       "l": left,
       "r": right,
+    ),
+  ),
+  "filter": (
+    "prefix": "filter",
+    "values": (
+      "br-small": brightness(0.3),
+      "br-medium": brightness(0.6),
+      "br-full": brightness(1),
     ),
   ),
   "justify-content": (
@@ -611,6 +620,15 @@ $utilities: (
       "none": none,
     ),
   ),
+  "transition": (
+    "prefix": "time",
+    "values": (
+      "xs": 0.3,
+      "sm": 0.5,
+      "md": 0.8,
+      "lg": 1,
+    ),
+  ),
   "text-align": (
     "prefix": "t-align",
     "values": (
@@ -661,6 +679,7 @@ $utilities: (
       "80": 80px,
       "90": 90px,
       "100": 100px,
+      "110": 110px,
       "130": 130px,
       "150": 150px,
       "200": 200px,

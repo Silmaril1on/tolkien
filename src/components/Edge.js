@@ -1,22 +1,19 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import edge from "../assets/edge.png";
 import ring from "../assets/ring-quote.png";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { slideRight } from "../framerAnimations/motionValues";
 
 function Edge() {
-  const ref = useRef(null);
   let { scrollYProgress } = useScroll({
-    target: ref,
     offset: ["start start", "end start"],
   });
 
   let rotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
 
   return (
-    <main className="pos-f desktop-size right-0 bottom-50 h-300">
+    <main className="pos-f z-5 desktop-size right-0 bottom-50 h-300">
       <motion.div
-        ref={ref}
         variants={slideRight}
         initial="hidden"
         animate="visible"

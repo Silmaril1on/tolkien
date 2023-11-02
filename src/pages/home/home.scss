@@ -403,3 +403,47 @@
     }
   }
 }
+
+.entry-container {
+  .mordor-video {
+    @media screen and (min-width: 1000px) {
+      width: 50%;
+      height: auto;
+      margin: 20px;
+    }
+  }
+
+  .shelob-bw {
+    background: url("../../assets/shelob-bw.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      mask-image: url("../../assets/image-mask.png");
+      mask-size: 2600% 100%;
+      mask-position: 100% 0;
+      animation: mordor 1.3s;
+      animation-delay: 2s;
+      animation-timing-function: steps(24);
+      will-change: transform;
+    }
+  }
+}
+
+@keyframes mordor {
+  0% {
+    mask-position: 0 0;
+  }
+  100% {
+    mask-position: 100% 0;
+  }
+}

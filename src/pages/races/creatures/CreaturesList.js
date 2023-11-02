@@ -12,7 +12,7 @@ function CreaturesList() {
   };
 
   return (
-    <section className="creatures w-full box-s-bb">
+    <section className="creatures pos-r z-2 w-full box-s-bb">
       <div className="m-1 display-f w-auto jc-c fd-r fw-w">
         {creatures.map((item, index) => {
           return (

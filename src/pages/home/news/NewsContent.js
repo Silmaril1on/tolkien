@@ -1,5 +1,7 @@
 import React from "react";
 import Line from "../../../components/Line";
+import { motion } from "framer-motion";
+import { headerZoom } from "../../../framerAnimations/motionValues";
 
 function NewsContent() {
   return (
@@ -10,7 +12,12 @@ function NewsContent() {
         <h3 className="bw-text-style text-t-up pl-3 m-2">explore</h3>
       </div>
       <Line />
-      <article className="news-feed p-3 display-f jc-c fd-r fw-w color-white">
+      <motion.article
+        variants={headerZoom}
+        initial="hidden"
+        whileInView="visible"
+        className="news-feed p-3 display-f jc-c fd-r fw-w color-white"
+      >
         <div>
           <h1>Rings Of Power: Season 2</h1>
           <p className="color-l-grey">
@@ -44,7 +51,7 @@ function NewsContent() {
           </p>
           <span>details</span>
         </div>
-      </article>
+      </motion.article>
     </section>
   );
 }

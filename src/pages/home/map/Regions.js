@@ -23,7 +23,8 @@ function Regions() {
     <motion.div
       variants={opacityIn}
       initial="hidden"
-      animate="visible"
+      whileInView="visible"
+      viewport={{ once: true }}
       className="regions"
     >
       {middleEarth.map((region) => {
