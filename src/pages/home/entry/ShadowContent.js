@@ -27,7 +27,7 @@ function ShadowContent() {
               className={
                 active === index
                   ? "m-1 bb-l-grey p-1 time-sm cursor-p font-f-primary text-t-up column-se w-150 h-200"
-                  : " m-1 p-1 cursor-p time-sm font-f-primary text-t-up column-se w-150 h-200 filter-br-medium"
+                  : " m-1 p-1 cursor-p time-sm font-f-primary text-t-up column-se w-150 h-200 filter-br-medium inactive-coll"
               }
               onClick={() => activeEdition(index)}
             >

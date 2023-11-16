@@ -6,12 +6,9 @@ import LightSmoke from "../../../components/LightSmoke";
 
 function Entry() {
   return (
-    <main
-      id="entry"
-      className="w-full of-h entry-container pos-r column-c mt-n2 h-full"
-    >
+    <main className="w-full of-h entry-container pos-r column-c mt-n2 h-full">
       <LightSmoke />
-      <section className="responsive-column-c pos-r z-2 mt-5 w-full">
+      <section id="entry" className="responsive-column-c pos-r z-2 mt-6 w-full">
         <Video />
         <EntryContent />
       </section>

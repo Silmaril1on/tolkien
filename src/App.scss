@@ -48,3 +48,8 @@ html {
   font-family: "kelt";
   src: local("kelt"), url("../src/fonts/KELTN__.ttf") format("truetype");
 }
+@font-face {
+  font-family: "moria";
+  src: local("angerthasMoria"),
+    url("../src/fonts/AngerthasMoria-lgLAD.ttf") format("truetype");
+}

@@ -112,6 +112,7 @@ $utilities: (
       "secondary": $secondary,
       "kelt": $kelt,
       "aniron": $aniron,
+      "moria": $moria,
     ),
   ),
   "font-size": (
@@ -262,7 +263,9 @@ $utilities: (
       "n1": $base-margin - 10,
       "n2": $base-margin - 20,
       "n3": $base-margin - 30,
-
+      "n4": $base-margin - 40,
+      "n5": $base-margin - 50,
+      "n6": $base-margin - 60,
       "0": 0,
       "1": $base-margin,
       "2": $base-margin * 2,
@@ -270,6 +273,7 @@ $utilities: (
       "4": $base-margin * 6,
       "5": $base-margin * 8,
       "6": $base-margin * 10,
+      "7": $base-margin * 15,
     ),
   ),
   "margin-bottom": (
@@ -682,6 +686,8 @@ $utilities: (
       "110": 110px,
       "130": 130px,
       "150": 150px,
+      "170": 170px,
+      "190": 190px,
       "200": 200px,
       "250": 250px,
       "300": 300px,

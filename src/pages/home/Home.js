@@ -4,6 +4,7 @@ import "./home.scss";
 import News from "./news/News";
 import Edge from "../../components/Edge";
 import Entry from "./entry/Entry";
+import Heroes from "./heroes/Heroes";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <News />
       <MiddleEarth />
       <Edge />
+      <Heroes />
     </main>
   );
 }

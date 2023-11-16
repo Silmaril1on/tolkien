@@ -132,3 +132,10 @@ export const forMask = {
     },
   },
 };
+
+export const glowingText = {
+  visible: {
+    opacity: 1,
+    textShadow: ["2px 2px 5px red"],
+  },
+};

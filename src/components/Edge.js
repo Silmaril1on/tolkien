@@ -48,8 +48,8 @@ const links = [
     link: "#map",
   },
   {
-    name: "footer",
-    link: "#footer",
+    name: "heroes",
+    link: "#heroes",
   },
   {
     name: "header",
@@ -60,15 +60,6 @@ const links = [
 function HomeLinks() {
   const positions = ["top1", "top", "center", "bottom", "bottom1"];
   const [positionIndexes] = useState([0, 1, 2, 3, 4]);
-
-  //   const handleNext = () => {
-  //     setPositionIndexes((prevIndexes) => {
-  //       const updatedIndexes = prevIndexes.map(
-  //         (prevIndex) => (prevIndex + 1) % 5
-  //       );
-  //       return updatedIndexes;
-  //     });
-  //   };
 
   const linkVariants = {
     top1: { y: "-120px", x: "50px", scale: 0.5 },

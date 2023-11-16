@@ -1,0 +1,58 @@
+.heroes-main-container {
+  background: url("../../../assets/hall.jpg");
+  background-position: center;
+  background-size: cover;
+
+  .home-heroes-container {
+    @media screen and (min-width: 1100px) {
+      justify-content: flex-start;
+      align-items: flex-end;
+      height: 740px;
+    }
+    &:hover .home-heroes-card {
+      filter: brightness(0.5);
+    }
+
+    .home-heroes-card {
+      cursor: pointer;
+      position: relative;
+      transition: 0.4s;
+      @media screen and (min-width: 1100px) {
+        height: 686px;
+        margin: 0;
+        width: auto;
+      }
+
+      .img-div {
+        img {
+          object-position: 0 25%;
+        }
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 3px;
+        right: 0;
+        top: 0;
+        background: linear-gradient(
+          rgba(0, 0, 0, 0.144),
+          rgb(146, 111, 21) 50%,
+          rgba(0, 0, 0, 0.103)
+        );
+      }
+
+      &:hover {
+        filter: brightness(1);
+        transform: translateY(-10px);
+        z-index: 3;
+      }
+
+      &:hover .hero-icon {
+        transition: 0.6s;
+        filter: brightness(1.5);
+      }
+    }
+  }
+}

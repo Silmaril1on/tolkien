@@ -10,6 +10,12 @@ import Jackson from "./pages/creators/jackson/Jackson";
 import Elves from "./pages/races/elves/Elves";
 import Valars from "./pages/races/valars/Valars";
 import Creatures from "./pages/races/creatures/Creatures";
+import Gandalf from "./pages/pagecharacters/Gandalf";
+import Angmar from "./pages/pagecharacters/Angmar";
+import Sauron from "./pages/pagecharacters/Sauron";
+import Galadriel from "./pages/pagecharacters/Galadriel";
+import Saruman from "./pages/pagecharacters/Saruman";
+import Aragorn from "./pages/pagecharacters/Aragorn";
 
 function App() {
   return (
@@ -25,6 +31,12 @@ function App() {
         <Route path="/elves" element={<Elves />} />
         <Route path="/valars" element={<Valars />} />
         <Route path="/creatures" element={<Creatures />} />
+        <Route path="/gandalf" element={<Gandalf />} />
+        <Route path="/angmar" element={<Angmar />} />
+        <Route path="/sauron" element={<Sauron />} />
+        <Route path="/galadriel" element={<Galadriel />} />
+        <Route path="/saruman" element={<Saruman />} />
+        <Route path="/aragorn" element={<Aragorn />} />
       </Routes>
     </>
   );

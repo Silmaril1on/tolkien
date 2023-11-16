@@ -202,3 +202,21 @@
     mask-position: 100% 0;
   }
 }
+.masky-one {
+  mask-image: url("../assets/image-mask.png");
+  mask-size: 2500% 100%;
+  animation: masky 1.6s;
+  animation-delay: 2s;
+  animation-timing-function: steps(24);
+  animation-fill-mode: forwards;
+  will-change: transform;
+}
+
+@keyframes masky-one {
+  0% {
+    mask-position: 0 0;
+  }
+  100% {
+    mask-position: 100% 0;
+  }
+}

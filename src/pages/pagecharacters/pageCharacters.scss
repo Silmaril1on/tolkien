@@ -1,0 +1,158 @@
+.edge-buttons {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+  top: 540px;
+  transition: 0.4s ease-in-out;
+  width: 150px;
+  z-index: 5;
+  &:hover {
+    left: 0;
+  }
+
+  button {
+    border: none;
+    cursor: pointer;
+    color: white;
+    font: normal 1.1rem kelt;
+    filter: drop-shadow(3px 0 1px goldenrod);
+    letter-spacing: 1px;
+    margin-top: 7px;
+    transition: 0.4s;
+    padding-left: 10px;
+    text-align: left;
+    width: 90px;
+    &:hover {
+      color: goldenrod;
+      transform: translateX(10px);
+    }
+  }
+}
+
+.characters-bio-page {
+  margin-top: -90px;
+  z-index: 10;
+  .info-section {
+    width: 100%;
+    @media screen and (min-width: 1100px) {
+      height: 600px;
+    }
+  }
+
+  .saruman-image-div {
+    background: url("../../assets/saruman-bw.png");
+  }
+  .sauron-image-div {
+    background: url("../../assets/sauron-bw.png");
+  }
+  .gandalf-image-div {
+    background: url("../../assets/gandalf-bw.png");
+  }
+  .gandalf-image-div,
+  .sauron-image-div,
+  .saruman-image-div {
+    background-position: center;
+    background-size: cover;
+    height: 305px;
+    @media screen and (min-width: 1000px) {
+      height: 650px;
+      width: 90%;
+    }
+  }
+
+  .character-origin {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      color: transparent;
+      background: linear-gradient(
+        to top,
+        rgba(255, 217, 0, 0.678),
+        goldenrod,
+        rgba(255, 217, 0, 0.644)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      font-size: 2rem;
+      font-family: kelt;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+      position: relative;
+      text-transform: capitalize;
+      text-align: center;
+      width: 100%;
+
+      @media screen and (min-width: 800px) {
+        font-size: 3rem;
+      }
+    }
+
+    p {
+      color: #ccc;
+      font-size: 0.7rem;
+      font-weight: normal;
+      font-family: quicksand;
+      padding: 10px 0 10px 0;
+      @media screen and (min-width: 800px) {
+        font-size: 1rem;
+        padding: 20px 50px 20px 50px;
+      }
+    }
+
+    h3 {
+      font-family: kelt;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+
+    q {
+      color: white;
+      padding: 20px 10px 20px 10px;
+      font-family: anironc;
+      font-size: 0.6rem;
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+    }
+  }
+}
+
+.lit-text {
+  animation: lit 5s 2s linear infinite;
+}
+
+@keyframes lit {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65%,
+  80%,
+  90.1%,
+  92% {
+    color: #fff;
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+      0 0 80px #03bcf4, 0 0 160px #03bcf4;
+  }
+}
