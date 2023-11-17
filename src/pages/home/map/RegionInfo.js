@@ -3,7 +3,6 @@ import { headerZoom } from "../../../framerAnimations/motionValues";
 import { motion } from "framer-motion";
 
 function RegionInfo({ data, closeRegion }) {
-  console.log(data);
   return (
     <div className="region-info">
       <section>
