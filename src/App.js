@@ -16,11 +16,14 @@ import Sauron from "./pages/pagecharacters/Sauron";
 import Galadriel from "./pages/pagecharacters/Galadriel";
 import Saruman from "./pages/pagecharacters/Saruman";
 import Aragorn from "./pages/pagecharacters/Aragorn";
+import ScrollTop from "./components/ScrollTop";
+import Footer from "./layout/footer/Footer";
 
 function App() {
   return (
     <>
       <NavigationBar />
+      <ScrollTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/lotr" element={<Lotr />} />
@@ -38,6 +41,7 @@ function App() {
         <Route path="/saruman" element={<Saruman />} />
         <Route path="/aragorn" element={<Aragorn />} />
       </Routes>
+      <Footer />
     </>
   );
 }
